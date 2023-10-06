@@ -10,8 +10,8 @@ using ProductsApi.Models;
 namespace ProductsApi.Migrations
 {
     [DbContext(typeof(MyDBContext))]
-    [Migration("20231006184725_CreateProductsTable")]
-    partial class CreateProductsTable
+    [Migration("20231006230740_l")]
+    partial class l
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace ProductsApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("products");
+                    b.ToTable("Products");
                 });
 #pragma warning restore 612, 618
         }

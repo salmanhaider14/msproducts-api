@@ -12,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add the DbContext service.
-builder.Services.AddDbContext<MyDBContext>(options => options.UseMySql("Server=localhost;Port=3306;Database=MSProducts;User=root;Password=admin123;", new MySqlServerVersion(new Version(8, 0, 11))));
+builder.Services.AddDbContext<MyDBContext>(options => options.UseMySql("Server=msproducts.mysql.database.azure.com;Database=msproducts;User=salman;Password=Abc12345;", new MySqlServerVersion(new Version(8, 0, 11))));
 
 var app = builder.Build();
 
